@@ -273,7 +273,14 @@
           ;;(add-input "take business card\n")
           ;;(add-input "take strange book\n")
           ;;(add-input "look strange book\n")
-          ;;(add-input "use teleporter\n")
+          (add-input (apply str (repeat 7 "north\n")))
+          (add-input "east\ntake journal\nwest\n")
+          (add-input (apply str (repeat 2 "north\n")))
+          (add-input "take orb\n") ;; 22
+          (add-input "north\nnorth\neast\nsouth\neast\nnorth\n") ;; 93
+          (add-input "south\n")
+          (add-input (apply str (repeat 4 "west\nsouth\neast\nnorth\n")))
+          (add-input "north\neast\nnorth\n")
           (func))
       (finally
         (println)
