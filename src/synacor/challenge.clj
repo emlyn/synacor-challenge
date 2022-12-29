@@ -276,11 +276,14 @@
           (add-input (apply str (repeat 7 "north\n")))
           (add-input "east\ntake journal\nwest\n")
           (add-input (apply str (repeat 2 "north\n")))
-          (add-input "take orb\n") ;; 22
-          (add-input "north\nnorth\neast\nsouth\neast\n") ;; 104
-          (add-input (apply str (repeat 3 "east\nwest\n"))) ;; - 3 * 18 = 50
-          (add-input (apply str (repeat 2 "west\neast\n"))) ;; - 2 * 4 = 42
-          (add-input "north\nnorth\neast\n") ;; - 11 - 1 = 30
+          (add-input "take orb\n")     ;; 22
+          (add-input "east\nnorth\n")  ;; - 4 = 18
+          (add-input "north\nsouth\n") ;; * 4 = 72
+          (add-input "east\neast\n")   ;; - 18 = 54
+          (add-input "west\nwest\n")   ;; - 4 = 50
+          (add-input "east\nnorth\n")  ;; - 11 = 39
+          (add-input "north\nwest\n")  ;; - 8 = 31
+          (add-input "east\neast\n")   ;; - 1 = 30
           (func))
       (finally
         (println)
