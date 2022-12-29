@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 
 # 0x178b: jt   r0  0x1793 /* 6035 */
 # 0x178e: add  r0  r1  0x01 /* 1 */
