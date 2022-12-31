@@ -18,15 +18,13 @@
 # 0x17b3: ret
 
 # https://rosettacode.org/wiki/Ackermann_function#Python:_Without_recursive_function_calls
-from collections import deque
 
 r7 = 0
 
 def ack_ix(m, n):
   "Paddy3118's iterative with optimisations on m"
 
-  stack = deque([])
-  stack.extend([m, n])
+  stack = [m, n]
 
   while  len(stack) > 1:
     global r7
