@@ -1,6 +1,6 @@
 # Synacor Challenge
 
-My attempt at solving the [synacor challenge](https://challenge.synacor.com)
+My attempt at solving the [synacor challenge](https://challenge.synacor.com) using Clojure.
 
 Run it with:
 
